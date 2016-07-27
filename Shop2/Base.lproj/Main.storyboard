@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BqS-55-QKj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Images-->
+        <scene sceneID="DWm-0m-0Cm">
+            <objects>
+                <viewController id="GZV-Yx-fMC" customClass="ListImages" customModule="Shop2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tZs-g1-ycs"/>
+                        <viewControllerLayoutGuide type="bottom" id="HCe-Bn-AOO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fqX-yh-6Qv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XN-3U-Sfv">
+                                <rect key="frame" x="38" y="92" width="93" height="136"/>
+                                <state key="normal" image="shop1-1.jpg"/>
+                                <connections>
+                                    <action selector="onTouch:" destination="GZV-Yx-fMC" eventType="touchUpInside" id="Dfx-5U-96g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxe-P5-HEH">
+                                <rect key="frame" x="148" y="92" width="93" height="136"/>
+                                <state key="normal" image="shop1-2.jpg"/>
+                                <connections>
+                                    <action selector="onTouch:" destination="GZV-Yx-fMC" eventType="touchUpInside" id="Sxe-0K-oeU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ma-6m-Ie9">
+                                <rect key="frame" x="262" y="92" width="93" height="136"/>
+                                <state key="normal" image="shop1-3.jpg"/>
+                                <connections>
+                                    <action selector="onTouch:" destination="GZV-Yx-fMC" eventType="touchUpInside" id="T8A-bx-0dH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CY2-QJ-wAA">
+                                <rect key="frame" x="38" y="260" width="93" height="136"/>
+                                <state key="normal" image="shop1-4.jpg"/>
+                                <connections>
+                                    <action selector="onTouch:" destination="GZV-Yx-fMC" eventType="touchUpInside" id="xzR-5f-zvu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mW-WS-rYV">
+                                <rect key="frame" x="148" y="260" width="93" height="136"/>
+                                <state key="normal" image="shop1-5.jpg"/>
+                                <connections>
+                                    <action selector="onTouch:" destination="GZV-Yx-fMC" eventType="touchUpInside" id="AQY-zh-tHg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WIv-Lx-VFb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xC-La-jEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="-222"/>
+        </scene>
+        <!--View Scroll-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewScroll" id="BYZ-38-t0r" userLabel="View Scroll" customClass="ViewScroll" customModule="Shop2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="VgU-dK-efn">
+                                <rect key="frame" x="52" y="533" width="497" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="RJk-Zc-edB"/>
+                                </connections>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oph-x0-aC7">
+                                <rect key="frame" x="9" y="280" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="YeP-AR-OLR"/>
+                                    <constraint firstAttribute="height" constant="40" id="xd6-cK-XNp"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="previous.png"/>
+                                <connections>
+                                    <action selector="action_PreviousPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="40O-uM-7Kp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qoh-Jl-ePg">
+                                <rect key="frame" x="552" y="280" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="IjI-MA-h7E"/>
+                                    <constraint firstAttribute="height" constant="40" id="WAR-ds-8fo"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="next.png"/>
+                                <connections>
+                                    <action selector="action_nextPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xeq-aB-xUM"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPU-zF-STa">
+                                <rect key="frame" x="52" y="45" width="497" height="435"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VgU-dK-efn" firstAttribute="top" secondItem="bPU-zF-STa" secondAttribute="bottom" constant="53" id="0v7-I1-xQ2"/>
+                            <constraint firstItem="VgU-dK-efn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="Fh6-wV-Nse"/>
+                            <constraint firstItem="Qoh-Jl-ePg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="G0u-CJ-qh5"/>
+                            <constraint firstItem="bPU-zF-STa" firstAttribute="leading" secondItem="Oph-x0-aC7" secondAttribute="trailing" constant="3" id="MNK-gA-miU"/>
+                            <constraint firstItem="Qoh-Jl-ePg" firstAttribute="leading" secondItem="bPU-zF-STa" secondAttribute="trailing" constant="3" id="Ozn-76-250"/>
+                            <constraint firstItem="VgU-dK-efn" firstAttribute="trailing" secondItem="bPU-zF-STa" secondAttribute="trailing" id="PJX-bx-AIf"/>
+                            <constraint firstItem="VgU-dK-efn" firstAttribute="top" secondItem="bPU-zF-STa" secondAttribute="bottom" constant="53" id="Xfi-gN-iYz"/>
+                            <constraint firstItem="VgU-dK-efn" firstAttribute="leading" secondItem="bPU-zF-STa" secondAttribute="leading" id="Yhc-Ow-Va8"/>
+                            <constraint firstAttribute="trailing" secondItem="Qoh-Jl-ePg" secondAttribute="trailing" constant="8" id="anN-v4-vRZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VgU-dK-efn" secondAttribute="bottom" constant="30" id="ayG-80-KqL"/>
+                            <constraint firstItem="Oph-x0-aC7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hwd-7r-PfF"/>
+                            <constraint firstItem="Oph-x0-aC7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="9" id="kBX-xp-KXm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VgU-dK-efn" secondAttribute="bottom" constant="30" id="lm3-uY-GHp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VgU-dK-efn" secondAttribute="trailing" constant="31" id="m1o-P5-vAl"/>
+                            <constraint firstItem="bPU-zF-STa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="ndr-uf-ogt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageController" destination="VgU-dK-efn" id="c9c-BY-XCA"/>
+                        <outlet property="scrollView" destination="bPU-zF-STa" id="ASh-Ur-lVf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="426"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6bZ-xO-Xg0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BqS-55-QKj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GT6-jX-WnE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GZV-Yx-fMC" kind="relationship" relationship="rootViewController" id="pm6-XS-Blg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zY4-bA-Ndv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="-222"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="next.png" width="215" height="215"/>
+        <image name="previous.png" width="215" height="215"/>
+        <image name="shop1-1.jpg" width="500" height="750"/>
+        <image name="shop1-2.jpg" width="750" height="1238"/>
+        <image name="shop1-3.jpg" width="640" height="872"/>
+        <image name="shop1-4.jpg" width="800" height="800"/>
+        <image name="shop1-5.jpg" width="1000" height="1500"/>
+    </resources>
+</document>
